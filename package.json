@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.6.0",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
+    "react-router-dom": "^6.15.0",
+    "sort-by": "^1.2.0"
+  },
+  "devDependencies": {
+    "daisyui": "^3.7.3"
+  }
+}
