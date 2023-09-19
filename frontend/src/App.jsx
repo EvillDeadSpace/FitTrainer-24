@@ -4,12 +4,19 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './global.css';
 import Home from './pages/Home'
+
 import Wraper from './Wraper';
+import LoadingBar from 'react-top-loading-bar'
+
+
 function App() {
+  const [progress, setProgress] = useState(0)
+
   return (
     <>
       <Wraper >
-        <Layout />
+        <LoadingBar color='#f11946' progress={progress} onLoaderFinished={() => setProgress(0)} />
+        <Layout setProgress={setProgress} />
       </Wraper>
     </>
   );

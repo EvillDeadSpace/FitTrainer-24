@@ -12,8 +12,8 @@ const Header = () => {
       display: 'Home'
     },
     {
-      path: '/doctor',
-      display: 'Find a Doctor'
+      path: '/coach',
+      display: 'Find a Coach'
     },
     {
       path: '/services',
@@ -27,37 +27,16 @@ const Header = () => {
 
   ]
 
-  const headerRef = useRef(null)
-  const menuRef = useRef(null)
-
-  const handlerStickyHeader = () => {
-    window.addEventListener('scroll', () => {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        headRef.current.classList.add('sticky_header')
-      } else {
-        headRef.current.classList.remove('sticky_header')
-      }
-    })
-  }
-
-  useEffect(() => {
-    handlerStickyHeader()
-
-    return () => window.removeEventListener('scroll', handlerStickyHeader)
-  })
-
-
-  const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
 
 
   return (
     <>
-      <div className="navbar bg-base-100 " ref={headerRef}>
+      <div className="navbar bg-base-100 " >
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1" ref={menuRef} onClick={toggleMenu}>
+          <ul className="menu menu-horizontal px-1"  >
             {
               navLink.map((link, index) => (
                 <li className='mt-4' key={index}>

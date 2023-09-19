@@ -9,6 +9,8 @@ import Phone from "../assets/picture/Power Moves - Calendar.png"
 import About from './About'
 import { BsArrowRight } from 'react-icons/bs'
 import ServicesList from '../components/scrap/ServicesList'
+import Coach from './Doctors/Coach'
+import CoachList from '../components/scrap/CoachList'
 const Home = () => {
   return (
     <>
@@ -88,8 +90,16 @@ const Home = () => {
           <ServicesList />
         </div>
       </section >
-
-
+      {/* best trainer */}
+      <section className=''>
+        <div className="container">
+          <div className='xl:w-[470px]  mx-auto'>
+            <h2 className='heading  text-center mt-20'>Our best Trainers</h2>
+            <p className=' text_paragraph text-center'>Meet our exceptional trainers who are dedicated to helping you achieve your fitness goals. Their expertise and commitment make them the best in the business.</p>
+          </div>
+          <CoachList />
+        </div>
+      </section>
     </>
   )
 }
