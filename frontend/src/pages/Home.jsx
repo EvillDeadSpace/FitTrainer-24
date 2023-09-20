@@ -11,6 +11,10 @@ import { BsArrowRight } from 'react-icons/bs'
 import ServicesList from '../components/scrap/ServicesList'
 import Coach from './Doctors/Coach'
 import CoachList from '../components/scrap/CoachList'
+import Faq from "../assets/picture/question.png"
+import FaqItem from "../components/scrap/FaqItem"
+import Kurac from '../components/scrap/Swiper'
+
 const Home = () => {
   return (
     <>
@@ -100,6 +104,22 @@ const Home = () => {
           <CoachList />
         </div>
       </section>
+      {/* faq section */}
+      <section className=''>
+        <div className='container mt-10  '>
+          <div className='flex justify-between gap-[50px] lg:gap-0'>
+            <div className=' w-1/2  hidden md:block'>
+              <img className='   w-auto  ' src={Faq} alt="" />
+            </div>
+            <div className='w-full md:w-1/2'>
+              <h2 className='heading text-center'>Frequently Asked Questions</h2>
+              <FaqItem />
+            </div>
+          </div>
+
+        </div>
+      </section >
+      <Kurac />
     </>
   )
 }
