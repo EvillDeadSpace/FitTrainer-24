@@ -13,7 +13,7 @@ import Coach from './Doctors/Coach'
 import CoachList from '../components/scrap/CoachList'
 import Faq from "../assets/picture/question.png"
 import FaqItem from "../components/scrap/FaqItem"
-import Kurac from '../components/scrap/Swiper'
+import Alphatest from '../components/scrap/Swiper'
 
 const Home = () => {
   return (
@@ -116,10 +116,15 @@ const Home = () => {
               <FaqItem />
             </div>
           </div>
-
         </div>
       </section >
-      <Kurac />
+      <Alphatest />
+      <section>
+
+
+      </section>
+
+
     </>
   )
 }
