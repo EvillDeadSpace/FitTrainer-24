@@ -9,7 +9,7 @@ import Phone from "../assets/picture/Power Moves - Calendar.png"
 import About from './About'
 import { BsArrowRight } from 'react-icons/bs'
 import ServicesList from '../components/scrap/ServicesList'
-import Coach from './Doctors/Coach'
+import Coach from './Coach/Coach'
 import CoachList from '../components/scrap/CoachList'
 import Faq from "../assets/picture/question.png"
 import FaqItem from "../components/scrap/FaqItem"

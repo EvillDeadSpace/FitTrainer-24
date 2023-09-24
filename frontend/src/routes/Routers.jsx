@@ -4,8 +4,8 @@ import Signup from '../pages/Signup'
 import Login from '../pages/Login'
 import Contact from '../pages/Contact'
 
-import CoachDetails from '../pages/Doctors/CoachDetails'
-import Coach from '../pages/Doctors/Coach'
+import CoachDetails from '../pages/Coach/CoachDetails'
+import Coach from '../pages/Coach/Coach'
 import { useState } from 'react'
 //napravi site not found kasnije 
 
