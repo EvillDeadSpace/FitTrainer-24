@@ -2,7 +2,7 @@ import React from 'react'
 
 const Info = () => {
     return (
-        <div className="stats shadow mt-6">
+        <div className="stats shadow mt-16">
 
             <div className="stat">
                 <div className="stat-title">Years of Experience</div>
@@ -10,7 +10,7 @@ const Info = () => {
             </div>
 
             <div className="stat">
-                <div className="stat-title">Clinic Location </div>
+                <div className="stat-title">Coaches  </div>
                 <div className="stat-value text-secondary">5+</div>
             </div>
 

@@ -6,6 +6,9 @@
     .text_paragraph {
         @apply text-[18px]  leading-[28px] font-[400] text-textColor mt-[18px];
     }
+    .poseban {
+        @apply text-[32px]  leading-[30px] font-[550] text-accentColor mt-[18px];
+    }
     .heading {
         @apply text-[36px] leading-[48px] font-[700] ;
     }

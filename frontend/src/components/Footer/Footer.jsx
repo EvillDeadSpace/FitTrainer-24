@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className=' text-[30px]  leading-[30px] font-[700] mb-6   text-black'>Quick Links</h3>
+            <h3 className=' text-[30px]  leading-[30px] font-[700] mb-6    text-slate-950'>Quick Links</h3>
 
             <ul className='flex flex-col gap-2'>
               {quickLinks01.map((link, index) =>
@@ -29,7 +29,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className=' text-[30px]  leading-[30px] font-[700] mb-6   text-black'>I want to</h3>
+            <h3 className=' text-[30px]  leading-[30px] font-[700] mb-6   text-slate-950'>I want to</h3>
 
             <ul className='flex flex-col gap-2'>
               {quickLinks02.map((link, index) =>
@@ -38,7 +38,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className=' text-[30px]  leading-[30px] font-[700] mb-6   text-black'>I want support</h3>
+            <h3 className=' text-[30px]  leading-[30px] font-[700] mb-6   text-slate-950'>I want support</h3>
 
             <ul className='flex flex-col gap-2'>
               {quickLinks03.map((link, index) =>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   )
 }
 

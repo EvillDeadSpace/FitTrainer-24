@@ -14,6 +14,10 @@ import CoachList from '../components/scrap/CoachList'
 import Faq from "../assets/picture/question.png"
 import FaqItem from "../components/scrap/FaqItem"
 import Alphatest from '../components/scrap/Swiper'
+import HeroPhoto from "../assets/picture/slikicaaa.jpg"
+import HeroPhoto2 from "../assets/picture/heroPhoto.jpg"
+import HeroPhoto3 from "../assets/picture/deadLift.jpg"
+import Baner from "../assets/picture/baner.jpg"
 
 const Home = () => {
   return (
@@ -25,36 +29,35 @@ const Home = () => {
           <div className='flex flex-col lg:flex-row gap-[90px] items-center  justify-between'>
             <div>
               <div className='lg:w-[570px]'>
-                <h1 className='text-[36px] leading-[62px]  text-black font-[800] md:text-[60px]'>
-                  <span className='text-[#FDBF5A]'> FitTrainer24 </span> <br /> Best Fitness Trainers in Tuzla.
+                <h1 className='text-[36px] leading-[62px]  text-heading font-[800] md:text-[60px]'>
+                  <span className='font-[900] text-[#1c82bd]'> FitTrainer24 </span> <br /> Best Fitness Trainers in Tuzla.
                 </h1>
-                <p className=' text_paragraph'>At FitTrainer24, we are dedicated to your physical health and fitness. Our team of expert fitness trainers in Tuzla is committed to helping you achieve your fitness goals and attain the best results. Whether you're a beginner or an experienced athlete, we provide personalized training and support to help you reach your peak performance.</p>
+                <p className='text_paragraph'>At FitTrainer24, we are dedicated to your physical health and fitness. Our team of expert fitness trainers in Tuzla is committed to helping you achieve your fitness goals and attain the best results. Whether you're a beginner or an experienced athlete, we provide personalized training and support to help you reach your peak performance.</p>
                 <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-8 bg-primaryColor    rounded-2xl">Hire a Trainer</button>
                 <Info />
               </div>
             </div>
             <div className='flex gap-[30px]  justify-end'>
               <div>
-                <img className='w-full' src={Slika} alt="" />
+                <img className='w-full rounded-3xl' src={HeroPhoto} alt="" />
               </div>
               <div className='mt-[30px] '>
-                <img src={Slika} className='w-full mb-[30px]' alt="" />
-                <img src={Slika} className='w-full' alt="" />
+                <img src={HeroPhoto2} className='w-full mb-[30px] rounded-2xl' alt="" />
+                <img src={HeroPhoto3} className='w-full  rounded-2xl  ' alt="" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div className="conteiner mt-8">
+      <section className=''>
+        <div className="container mt-8 ">
           <div className='lg:w-[470px] mx-auto'>
             <h2 className=' heading text-center'>Offering Top Fitness Coaching</h2>
             <p className='  text_paragraph text-center'>World-class care for everyone. Our trainers provide unparalleled expert fitness guidance.</p>
           </div>
         </div>
-
         <div className=' grid grid-cols-1  md:gird-cols-2 lg:grid-cols-3 gap-5 lg:gap=[30px] mt-[30px] lg:mt-[50px]'>
-          <div className=' py-[30px] px-5 '>
+          <div className=' py-[40px] px-5 '>
             <div className='flex item-center justify-center'><img src={TreningSlika} alt="" /></div>
 
             <div className='mt-[30px]'>

@@ -8,7 +8,7 @@ const ServicesCard = ({ item, index }) => {
 
     return (
         <div className='py-[30px] px-3 lg:px-5 '>
-            <h2 className=' text-[26px]  leading-9  text-black font-[700] '>{title}</h2>
+            <h2 className=' text-[26px]  leading-9    text-accentColor font-[700] '>{title}</h2>
             <p className='text-[16px] leading-7 text-textColor font-[400] mt-4'>{text}</p>
 
             <div className='flex  items-center  justify-between mt-[30px]'>
