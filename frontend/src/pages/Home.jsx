@@ -18,6 +18,7 @@ import HeroPhoto from "../assets/picture/slikicaaa.jpg"
 import HeroPhoto2 from "../assets/picture/heroPhoto.jpg"
 import HeroPhoto3 from "../assets/picture/deadLift.jpg"
 import Baner from "../assets/picture/baner.jpg"
+import { motion } from "framer-motion"
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
       <section className='hero_section pt-[60px] 2xl:h-[800px]'>
         <div className=' container'>
           <div className='flex flex-col lg:flex-row gap-[90px] items-center  justify-between'>
-            <div>
+            <motion.div>
               <div className='lg:w-[570px]'>
                 <h1 className='text-[36px] leading-[62px]  text-heading font-[800] md:text-[60px]'>
                   <span className='font-[900] text-[#1c82bd]'> FitTrainer24 </span> <br /> Best Fitness Trainers in Tuzla.
@@ -36,15 +37,40 @@ const Home = () => {
                 <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-8 bg-primaryColor    rounded-2xl">Hire a Trainer</button>
                 <Info />
               </div>
-            </div>
+            </motion.div
+            >
             <div className='flex gap-[30px]  justify-end'>
-              <div>
+              <motion.div variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 },
+              }}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 1.5, delay: 1 }}>
                 <img className='w-full rounded-3xl' src={HeroPhoto} alt="" />
-              </div>
-              <div className='mt-[30px] '>
+              </motion.div>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 75 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                initial="hidden"
+                animate="visible"
+                transition={{ duration: 1.5, delay: 1.5 }}
+
+                className='mt-[30px] '>
                 <img src={HeroPhoto2} className='w-full mb-[30px] rounded-2xl' alt="" />
-                <img src={HeroPhoto3} className='w-full  rounded-2xl  ' alt="" />
-              </div>
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, y: 75 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ duration: 1.5, delay: 2 }}>
+                  <img src={HeroPhoto3} className='w-full  rounded-2xl  ' alt="" />
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>
