@@ -34,7 +34,9 @@ const Home = () => {
                   <span className='font-[900] text-[#1c82bd]'> FitTrainer24 </span> <br /> Best Fitness Trainers in Tuzla.
                 </h1>
                 <p className='text_paragraph'>At FitTrainer24, we are dedicated to your physical health and fitness. Our team of expert fitness trainers in Tuzla is committed to helping you achieve your fitness goals and attain the best results. Whether you're a beginner or an experienced athlete, we provide personalized training and support to help you reach your peak performance.</p>
-                <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-8 bg-primaryColor    rounded-2xl">Hire a Trainer</button>
+                <Link to={{
+                  pathname: '/coach',
+                }}> <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mt-8 bg-primaryColor    rounded-2xl">Hire a Trainer</button ></Link>
                 <Info />
               </div>
             </motion.div
@@ -73,8 +75,8 @@ const Home = () => {
               </motion.div>
             </div>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
       <section className=''>
         <div className="container mt-8 ">
           <div className='lg:w-[470px] mx-auto'>
@@ -149,8 +151,6 @@ const Home = () => {
       </section >
       <Alphatest />
       <section>
-
-
       </section>
 
 
