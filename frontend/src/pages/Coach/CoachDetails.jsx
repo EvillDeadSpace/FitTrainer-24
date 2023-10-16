@@ -4,7 +4,7 @@ import imgStar from "../../assets/picture/starIcon.png"
 import { useState } from 'react'
 import CoachAbout from './CoachAbout'
 import CoachFeedback from './CoachFeedback'
-
+import SidePanel from './SidePanel'
 
 
 const CoachDetails = () => {
@@ -56,6 +56,9 @@ const CoachDetails = () => {
                 tempComponentRender
               }
             </div>
+          </div>
+          <div>
+            <SidePanel />
           </div>
         </div>
       </div>

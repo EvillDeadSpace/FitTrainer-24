@@ -3,22 +3,14 @@ import Services from '../pages/Services'
 import Signup from '../pages/Signup'
 import Login from '../pages/Login'
 import Contact from '../pages/Contact'
-
+import Notfound from '../pages/Notfound'
 import CoachDetails from '../pages/Coach/CoachDetails'
 import Coach from '../pages/Coach/Coach'
-import { useState } from 'react'
-//napravi site not found kasnije 
 
-import { Route, Routes, BrowserRouter } from 'react-router-dom'
-
-
-
+import { Route, Routes } from 'react-router-dom'
 
 
 const Router = () => {
-
-
-
 
    return <Routes>
       <Route path='/' element={<Home />} />
@@ -29,7 +21,8 @@ const Router = () => {
       <Route path='/contact' element={<Contact />} />
       <Route path='/coach' element={<Coach />} />
       <Route path='/coach/:id' element={<CoachDetails />} />
-      <Route path='*' element={<h1>Not Found</h1>} status={404} />
+      <Route path='/notfound' element={<Notfound />} status={404} />
+      <Route path='*' element={<h3>Test</h3>} status={404} />
    </Routes>
 
 

@@ -26,7 +26,7 @@ export const quickLinks01 = [
     },
     {
         path: "/",
-        display: "About Us"
+        display: "About me"
     },
     {
         path: "/services",
@@ -44,7 +44,7 @@ export const quickLinks02 = [
     },
     {
         path: "/",
-        display: "Get a Opinions",
+
     },
     {
         path: "/",
@@ -54,11 +54,11 @@ export const quickLinks02 = [
 export const quickLinks03 = [
     {
         path: "/",
-        display: "Donate Us"
+        display: "Donate"
     },
     {
         path: "/",
-        display: "Contact Us",
+        display: "Contact",
     },
 ]
 

@@ -16,8 +16,8 @@ const Info = () => {
 
             <div className="stat">
                 <div className="stat-value">100%</div>
-                <div className="stat-title">Tasks done</div>
-                <div className="stat-desc text-secondary">success</div>
+                <div className="stat-title">Happy customers</div>
+                {/* <div className="stat-desc text-secondary">success</div> */}
             </div>
 
         </div>
