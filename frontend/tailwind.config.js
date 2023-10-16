@@ -6,13 +6,12 @@ export default {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-
     extend: {
       colors: {
-        primaryColor: '#00539C',
-        secondaryColor: '#6d28d9',
-        accentColor: '#c7c5c5',
-        textColor: '#8f8686',
+        primaryColor: "#00539C",
+        secondaryColor: "#CCCCCC",
+        accentColor: "#c7c5c5",
+        textColor: "#8f8686",
       },
       boxShadow: {
         panelShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px",
@@ -21,6 +20,6 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dracula"]
+    themes: ["dracula"],
   },
-}
+};
