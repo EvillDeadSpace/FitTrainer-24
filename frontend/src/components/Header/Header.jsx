@@ -53,12 +53,12 @@ const Header = () => {
             ))}
 
             <li>
-              <button className="btn ml-5  btn-md mt-2  bg-primaryColor   hover:bg-secondaryColor">
+              <button className="btn ml-5  btn-md mt-2   bg-primaryColor   hover:bg-secondaryColor">
                 <Link to="/login">
                   <p className="mt-2">Login</p>
                 </Link>
               </button>
-              <div className="dropdown hidden dropdown-end ">
+              <div className="dropdown  hidden dropdown-end ">
                 <label
                   tabIndex={0}
                   className="btn btn-ghost btn-circle avatar mt-2 "
